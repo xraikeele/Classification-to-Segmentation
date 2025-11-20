@@ -107,6 +107,11 @@ Classification-to-Segmentation/
 │   ├── classification_vis.py       # Classification metrics
 │   └── json_results.py             # JSON result parser
 │
+├── MedSAM/                         # MedSAM library (https://github.com/bowang-lab/MedSAM)
+│   ├── segment_anything/          # SAM model architecture
+│   ├── MedSAM_Inference.py        # Inference utilities
+│   └── ...
+│
 ├── model_checkpoints/              # Trained model weights
 │
 ├── requirements.txt                # Python dependencies
@@ -142,6 +147,8 @@ pip install segment-anything opencv-python scikit-learn scikit-image
 pip install pytorch-grad-cam timm matplotlib pandas tqdm
 pip install grad-cam torchcam ttach
 ```
+
+**Note:** The MedSAM library code is included in this repository. Original source: [bowang-lab/MedSAM](https://github.com/bowang-lab/MedSAM)
 
 ### 4. Download ISIC 2017 Dataset
 ```bash
@@ -457,6 +464,7 @@ If you use this code in your research, please cite our paper:
 
 - **ISIC 2017 Challenge** for providing the skin lesion dataset
 - **Meta AI** for Segment Anything Model (SAM)
+- **[MedSAM](https://github.com/bowang-lab/MedSAM)** ([Ma et al., 2024](https://www.nature.com/articles/s41467-024-44824-z)) - Medical image segmentation foundation model
 - **PyTorch GradCAM** library for CAM implementations
 - **Timm** library for pre-trained vision transformer models
 

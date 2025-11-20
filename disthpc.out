@@ -1,0 +1,1246 @@
+Processing model: swin
+Checkpoint not found for swin. Using pretrained weights instead.
+Testing swin...
+Methods to be evaluated: ['GradCAM', 'GradCAM++', 'EigenGradCAM', 'AblationCAM', 'RandomCAM']
+Ground truth shape: (1, 2848, 4288)
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+input_tensor shape: torch.Size([1, 3, 224, 224])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Activation map shape: (1, 224, 224)
+Heatmap shape: (224, 224)
+Heatmap size: 4288x2848
+Sampled points (in heatmap space): [[1434  615]
+ [ 995 1407]
+ [3330 2782]
+ [4044  984]
+ [3944 1187]
+ [3130 2626]
+ [4193  896]
+ [2255  516]
+ [1024 2553]
+ [ 934 1461]
+ [3405 2780]
+ [1037 1396]
+ [ 996 1316]
+ [4018 1088]
+ [ 837 1395]
+ [ 125   43]
+ [3981 1064]
+ [2073  176]
+ [4183  991]
+ [3363 2685]]
+Normalized input points: [[0.33442163 0.21594101]
+ [0.23204291 0.4940309 ]
+ [0.7765858  0.97682583]
+ [0.943097   0.34550563]
+ [0.91977614 0.41678372]
+ [0.72994405 0.92205054]
+ [0.97784513 0.31460676]
+ [0.5258862  0.18117978]
+ [0.23880596 0.8964185 ]
+ [0.21781716 0.51299155]
+ [0.7940765  0.9761236 ]
+ [0.24183768 0.49016854]
+ [0.23227613 0.46207866]
+ [0.9370336  0.38202247]
+ [0.1951959  0.4898174 ]
+ [0.02915112 0.01509831]
+ [0.92840487 0.3735955 ]
+ [0.48344216 0.06179775]
+ [0.97551304 0.34796348]
+ [0.78428173 0.94276685]]
+Scaled input points (mapped to 1024x1024): [[ 342.44775   221.1236  ]
+ [ 237.61194   505.88763 ]
+ [ 795.2239   1000.26965 ]
+ [ 965.7313    353.79776 ]
+ [ 941.85077   426.78653 ]
+ [ 747.4627    944.17975 ]
+ [1001.3134    322.15732 ]
+ [ 538.50745   185.52809 ]
+ [ 244.53731   917.93256 ]
+ [ 223.04477   525.30334 ]
+ [ 813.13434   999.55054 ]
+ [ 247.64178   501.9326  ]
+ [ 237.85075   473.16855 ]
+ [ 959.5224    391.191   ]
+ [ 199.8806    501.57303 ]
+ [  29.850746   15.460674]
+ [ 950.6866    382.5618  ]
+ [ 495.04477    63.2809  ]
+ [ 998.92535   356.3146  ]
+ [ 803.1045    965.39325 ]]
+Scaled bounding box (box_1024): [[  29.850746   15.460674 1001.3134   1000.26965 ]]
+Scaled input points: [[ 342.44775   221.1236  ]
+ [ 237.61194   505.88763 ]
+ [ 795.2239   1000.26965 ]
+ [ 965.7313    353.79776 ]
+ [ 941.85077   426.78653 ]
+ [ 747.4627    944.17975 ]
+ [1001.3134    322.15732 ]
+ [ 538.50745   185.52809 ]
+ [ 244.53731   917.93256 ]
+ [ 223.04477   525.30334 ]
+ [ 813.13434   999.55054 ]
+ [ 247.64178   501.9326  ]
+ [ 237.85075   473.16855 ]
+ [ 959.5224    391.191   ]
+ [ 199.8806    501.57303 ]
+ [  29.850746   15.460674]
+ [ 950.6866    382.5618  ]
+ [ 495.04477    63.2809  ]
+ [ 998.92535   356.3146  ]
+ [ 803.1045    965.39325 ]]
+Scaled bounding box (box_1024): [[  29.850746   15.460674 1001.3134   1000.26965 ]]
+Image shape: torch.Size([3, 224, 224])
+Transformed image shape: torch.Size([3, 224, 224])
+Resized image shape: torch.Size([1, 3, 1024, 1024])
+Image with bounding box and points saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/GradCAM/ISIC_0012092.jpg_bbox.png
+Image embedding shape: torch.Size([1, 256, 64, 64])
+### DEBUG: Inside medsam_inference ###
+Image embedding shape: torch.Size([1, 256, 64, 64])
+Ground truth shape: (1, 2848, 4288)
+Bounding box shape: (1, 4) | Values: [[  29.850746   15.460674 1001.3134   1000.26965 ]]
+Transformed box shape after expansion: torch.Size([20, 1, 4])
+Coordinates shape: torch.Size([20, 1, 2])
+Labels shape: torch.Size([20])
+Generating mask 1/10
+IoU for mask 1: 0.28847988242229716
+Generating mask 2/10
+IoU for mask 2: 0.27946832015838396
+Generating mask 3/10
+IoU for mask 3: 0.2815886626479102
+Generating mask 4/10
+IoU for mask 4: 0.27286712367548327
+Generating mask 5/10
+IoU for mask 5: 0.29354771258753726
+Generating mask 6/10
+IoU for mask 6: 0.2767005232379194
+Generating mask 7/10
+IoU for mask 7: 0.06757129192121
+Generating mask 8/10
+IoU for mask 8: 0.27180033741804477
+Generating mask 9/10
+IoU for mask 9: 0.24812434472895634
+Generating mask 10/10
+IoU for mask 10: 0.2964595800597914
+Best mask selected with IoU: 0.2964595800597914
+Low res pred overlay saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/GradCAM/ISIC_0012092.jpg_low_res_pred_overlay.png
+Mask shape: (2848, 4288)
+Number of contours found: 1012
+Largest contour mask saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/GradCAM/ISIC_0012092.jpg_largest_contours.png
+Predicted mask shape: (2848, 4288)
+Predicted mask shape: (2848, 4288)
+Ground truth shape: (1, 2848, 4288)
+Final mask with metrics saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/GradCAM/ISIC_0012092.jpg_result.png
+Original image with bounding box saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/GradCAM/ISIC_0012092.jpg_original_image_bbox.png
+Overlay with bounding box saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/GradCAM/ISIC_0012092.jpg_overlay_bbox.png
+Overlay with bounding box and labels saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/GradCAM/ISIC_0012092.jpg_overlay_unsupervised.png
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+input_tensor shape: torch.Size([1, 3, 224, 224])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Activation map shape: (1, 224, 224)
+Heatmap shape: (224, 224)
+Heatmap size: 4288x2848
+Sampled points (in heatmap space): [[2977   82]
+ [2644 2687]
+ [3114 2846]
+ [ 179 1902]
+ [2835  180]
+ [3901 1102]
+ [3551 2732]
+ [4012 1890]
+ [3453  772]
+ [3962  167]
+ [3980 1040]
+ [3909  907]
+ [3488 2762]
+ [ 265 2765]
+ [1384 2765]
+ [3140 2622]
+ [4269  961]
+ [3732 1094]
+ [ 644 1913]
+ [2846 2636]]
+Normalized input points: [[0.69426304 0.02879214]
+ [0.6166045  0.9434691 ]
+ [0.7262127  0.99929774]
+ [0.0417444  0.6678371 ]
+ [0.6611474  0.06320225]
+ [0.90974814 0.3869382 ]
+ [0.828125   0.95926964]
+ [0.9356343  0.6636236 ]
+ [0.8052705  0.2710674 ]
+ [0.92397386 0.05863764]
+ [0.92817163 0.36516854]
+ [0.9116138  0.3184691 ]
+ [0.8134328  0.9698034 ]
+ [0.06180037 0.9708567 ]
+ [0.3227612  0.9708567 ]
+ [0.73227614 0.9206461 ]
+ [0.99556905 0.33742976]
+ [0.8703358  0.38412923]
+ [0.15018657 0.67169946]
+ [0.6637127  0.9255618 ]]
+Scaled input points (mapped to 1024x1024): [[ 710.92535    29.483147]
+ [ 631.403     966.11237 ]
+ [ 743.6418   1023.2809  ]
+ [  42.74627   683.8652  ]
+ [ 677.01495    64.7191  ]
+ [ 931.5821    396.22473 ]
+ [ 848.        982.2921  ]
+ [ 958.08954   679.55054 ]
+ [ 824.597     277.57303 ]
+ [ 946.14923    60.044945]
+ [ 950.44775   373.9326  ]
+ [ 933.49255   326.11237 ]
+ [ 832.9552    993.0787  ]
+ [  63.28358   994.1573  ]
+ [ 330.50748   994.1573  ]
+ [ 749.85077   942.7416  ]
+ [1019.4627    345.52808 ]
+ [ 891.2239    393.34833 ]
+ [ 153.79105   687.82025 ]
+ [ 679.6418    947.77527 ]]
+Scaled bounding box (box_1024): [[  42.74627    29.483147 1019.4627   1023.2809  ]]
+Scaled input points: [[ 710.92535    29.483147]
+ [ 631.403     966.11237 ]
+ [ 743.6418   1023.2809  ]
+ [  42.74627   683.8652  ]
+ [ 677.01495    64.7191  ]
+ [ 931.5821    396.22473 ]
+ [ 848.        982.2921  ]
+ [ 958.08954   679.55054 ]
+ [ 824.597     277.57303 ]
+ [ 946.14923    60.044945]
+ [ 950.44775   373.9326  ]
+ [ 933.49255   326.11237 ]
+ [ 832.9552    993.0787  ]
+ [  63.28358   994.1573  ]
+ [ 330.50748   994.1573  ]
+ [ 749.85077   942.7416  ]
+ [1019.4627    345.52808 ]
+ [ 891.2239    393.34833 ]
+ [ 153.79105   687.82025 ]
+ [ 679.6418    947.77527 ]]
+Scaled bounding box (box_1024): [[  42.74627    29.483147 1019.4627   1023.2809  ]]
+Image shape: torch.Size([3, 224, 224])
+Transformed image shape: torch.Size([3, 224, 224])
+Resized image shape: torch.Size([1, 3, 1024, 1024])
+Image with bounding box and points saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/GradCAM++/ISIC_0012092.jpg_bbox.png
+Image embedding shape: torch.Size([1, 256, 64, 64])
+### DEBUG: Inside medsam_inference ###
+Image embedding shape: torch.Size([1, 256, 64, 64])
+Ground truth shape: (1, 2848, 4288)
+Bounding box shape: (1, 4) | Values: [[  42.74627    29.483147 1019.4627   1023.2809  ]]
+Transformed box shape after expansion: torch.Size([20, 1, 4])
+Coordinates shape: torch.Size([20, 1, 2])
+Labels shape: torch.Size([20])
+Generating mask 1/10
+IoU for mask 1: 0.7649467712618789
+Generating mask 2/10
+IoU for mask 2: 0.7647104999404248
+Generating mask 3/10
+IoU for mask 3: 0.7647810036075932
+Generating mask 4/10
+IoU for mask 4: 0.765902397729847
+Generating mask 5/10
+IoU for mask 5: 0.7650514022131167
+Generating mask 6/10
+IoU for mask 6: 0.7635832069046188
+Generating mask 7/10
+IoU for mask 7: 0.7627899812717693
+Generating mask 8/10
+IoU for mask 8: 0.7626727433107909
+Generating mask 9/10
+IoU for mask 9: 0.7690670061696517
+Generating mask 10/10
+IoU for mask 10: 0.765901159202361
+Best mask selected with IoU: 0.7690670061696517
+Low res pred overlay saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/GradCAM++/ISIC_0012092.jpg_low_res_pred_overlay.png
+Mask shape: (2848, 4288)
+Number of contours found: 209
+Largest contour mask saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/GradCAM++/ISIC_0012092.jpg_largest_contours.png
+Predicted mask shape: (2848, 4288)
+Predicted mask shape: (2848, 4288)
+Ground truth shape: (1, 2848, 4288)
+Final mask with metrics saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/GradCAM++/ISIC_0012092.jpg_result.png
+Original image with bounding box saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/GradCAM++/ISIC_0012092.jpg_original_image_bbox.png
+Overlay with bounding box saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/GradCAM++/ISIC_0012092.jpg_overlay_bbox.png
+Overlay with bounding box and labels saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/GradCAM++/ISIC_0012092.jpg_overlay_unsupervised.png
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+input_tensor shape: torch.Size([1, 3, 224, 224])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Activation map shape: (1, 224, 224)
+Heatmap shape: (224, 224)
+Heatmap size: 4288x2848
+Sampled points (in heatmap space): [[3984 1076]
+ [4239 1236]
+ [4220 1128]
+ [4284  839]
+ [3919 1058]
+ [4284 1033]
+ [4270  975]
+ [4118 1018]
+ [4091 1097]
+ [3740  961]
+ [4101  938]
+ [4287 1029]
+ [4037 1064]
+ [4156  996]
+ [4130 1005]
+ [4192  962]
+ [3926 1023]
+ [3927 1005]
+ [4244  986]
+ [4233  896]]
+Normalized input points: [[0.9291045  0.377809  ]
+ [0.9885728  0.43398875]
+ [0.98414177 0.3960674 ]
+ [0.9990672  0.2945927 ]
+ [0.9139459  0.37148875]
+ [0.9990672  0.36271068]
+ [0.9958022  0.3423455 ]
+ [0.9603545  0.3574438 ]
+ [0.9540578  0.3851826 ]
+ [0.8722015  0.33742976]
+ [0.9563899  0.32935393]
+ [0.99976677 0.3613062 ]
+ [0.94146454 0.3735955 ]
+ [0.9692164  0.3497191 ]
+ [0.963153   0.35287923]
+ [0.97761196 0.3377809 ]
+ [0.91557837 0.35919943]
+ [0.91581154 0.35287923]
+ [0.9897388  0.34620786]
+ [0.9871735  0.31460676]]
+Scaled input points (mapped to 1024x1024): [[ 951.403    386.8764 ]
+ [1012.2985   444.40448]
+ [1007.76117  405.57303]
+ [1023.0448   301.66293]
+ [ 935.8806   380.40448]
+ [1023.0448   371.41574]
+ [1019.7015   350.5618 ]
+ [ 983.403    366.02246]
+ [ 976.9552   394.42697]
+ [ 893.13434  345.52808]
+ [ 979.34326  337.25842]
+ [1023.76117  369.97754]
+ [ 964.0597   382.5618 ]
+ [ 992.4776   358.11237]
+ [ 986.2687   361.34833]
+ [1001.07465  345.88763]
+ [ 937.55225  367.82022]
+ [ 937.791    361.34833]
+ [1013.49255  354.51685]
+ [1010.86566  322.15732]]
+Scaled bounding box (box_1024): [[ 893.13434  301.66293 1023.76117  444.40448]]
+Scaled input points: [[ 951.403    386.8764 ]
+ [1012.2985   444.40448]
+ [1007.76117  405.57303]
+ [1023.0448   301.66293]
+ [ 935.8806   380.40448]
+ [1023.0448   371.41574]
+ [1019.7015   350.5618 ]
+ [ 983.403    366.02246]
+ [ 976.9552   394.42697]
+ [ 893.13434  345.52808]
+ [ 979.34326  337.25842]
+ [1023.76117  369.97754]
+ [ 964.0597   382.5618 ]
+ [ 992.4776   358.11237]
+ [ 986.2687   361.34833]
+ [1001.07465  345.88763]
+ [ 937.55225  367.82022]
+ [ 937.791    361.34833]
+ [1013.49255  354.51685]
+ [1010.86566  322.15732]]
+Scaled bounding box (box_1024): [[ 893.13434  301.66293 1023.76117  444.40448]]
+Image shape: torch.Size([3, 224, 224])
+Transformed image shape: torch.Size([3, 224, 224])
+Resized image shape: torch.Size([1, 3, 1024, 1024])
+Image with bounding box and points saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/EigenGradCAM/ISIC_0012092.jpg_bbox.png
+Image embedding shape: torch.Size([1, 256, 64, 64])
+### DEBUG: Inside medsam_inference ###
+Image embedding shape: torch.Size([1, 256, 64, 64])
+Ground truth shape: (1, 2848, 4288)
+Bounding box shape: (1, 4) | Values: [[ 893.13434  301.66293 1023.76117  444.40448]]
+Transformed box shape after expansion: torch.Size([20, 1, 4])
+Coordinates shape: torch.Size([20, 1, 2])
+Labels shape: torch.Size([20])
+Generating mask 1/10
+IoU for mask 1: 0.003980295503645747
+Generating mask 2/10
+IoU for mask 2: 0.003952673188132172
+Generating mask 3/10
+IoU for mask 3: 0.004124434944037775
+Generating mask 4/10
+IoU for mask 4: 0.002984050804152097
+Generating mask 5/10
+IoU for mask 5: 0.003968284032162559
+Generating mask 6/10
+IoU for mask 6: 0.0040579647727503835
+Generating mask 7/10
+IoU for mask 7: 0.00419652097961365
+Generating mask 8/10
+IoU for mask 8: 0.004009118811316609
+Generating mask 9/10
+IoU for mask 9: 0.002872591486183719
+Generating mask 10/10
+IoU for mask 10: 0.0039854982889671675
+Best mask selected with IoU: 0.00419652097961365
+Low res pred overlay saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/EigenGradCAM/ISIC_0012092.jpg_low_res_pred_overlay.png
+Mask shape: (2848, 4288)
+Number of contours found: 1389
+Largest contour mask saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/EigenGradCAM/ISIC_0012092.jpg_largest_contours.png
+Predicted mask shape: (2848, 4288)
+Predicted mask shape: (2848, 4288)
+Ground truth shape: (1, 2848, 4288)
+Final mask with metrics saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/EigenGradCAM/ISIC_0012092.jpg_result.png
+Original image with bounding box saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/EigenGradCAM/ISIC_0012092.jpg_original_image_bbox.png
+Overlay with bounding box saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/EigenGradCAM/ISIC_0012092.jpg_overlay_bbox.png
+Overlay with bounding box and labels saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/EigenGradCAM/ISIC_0012092.jpg_overlay_unsupervised.png
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+input_tensor shape: torch.Size([1, 3, 224, 224])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Activation map shape: (1, 224, 224)
+Heatmap shape: (224, 224)
+Heatmap size: 4288x2848
+Sampled points (in heatmap space): [[1459 1320]
+ [2247  952]
+ [1609 1380]
+ [1705 1272]
+ [2274 1617]
+ [2514 2357]
+ [2191 1542]
+ [2480  800]
+ [1603 1449]
+ [2053 1130]
+ [2853 1071]
+ [2199  776]
+ [1741 1544]
+ [1781 1367]
+ [2227 1099]
+ [2317 1382]
+ [1551 1419]
+ [1544 1311]
+ [ 192 1417]
+ [1856 1301]]
+Normalized input points: [[0.34025186 0.46348315]
+ [0.5240205  0.33426967]
+ [0.3752332  0.48455057]
+ [0.39762127 0.44662923]
+ [0.5303172  0.56776685]
+ [0.5862873  0.82759833]
+ [0.5109608  0.54143256]
+ [0.57835823 0.28089887]
+ [0.37383395 0.5087781 ]
+ [0.47877797 0.39676967]
+ [0.66534513 0.37605336]
+ [0.5128265  0.2724719 ]
+ [0.4060168  0.5421348 ]
+ [0.41534516 0.47998595]
+ [0.51935637 0.38588482]
+ [0.54034513 0.4852528 ]
+ [0.3617071  0.49824437]
+ [0.36007464 0.46032304]
+ [0.04477612 0.49754214]
+ [0.43283582 0.4568118 ]]
+Scaled input points (mapped to 1024x1024): [[348.4179   474.60675 ]
+ [536.597    342.29214 ]
+ [384.2388   496.17978 ]
+ [407.16418  457.34833 ]
+ [543.0448   581.39325 ]
+ [600.3582   847.4607  ]
+ [523.2239   554.42694 ]
+ [592.23883  287.64044 ]
+ [382.80597  520.9888  ]
+ [490.26865  406.29214 ]
+ [681.3134   385.07864 ]
+ [525.13434  279.01123 ]
+ [415.7612   555.14606 ]
+ [425.31345  491.5056  ]
+ [531.8209   395.14606 ]
+ [553.3134   496.89886 ]
+ [370.38806  510.20224 ]
+ [368.71643  471.3708  ]
+ [ 45.850746 509.48315 ]
+ [443.22388  467.77527 ]]
+Scaled bounding box (box_1024): [[ 45.850746 279.01123  681.3134   847.4607  ]]
+Scaled input points: [[348.4179   474.60675 ]
+ [536.597    342.29214 ]
+ [384.2388   496.17978 ]
+ [407.16418  457.34833 ]
+ [543.0448   581.39325 ]
+ [600.3582   847.4607  ]
+ [523.2239   554.42694 ]
+ [592.23883  287.64044 ]
+ [382.80597  520.9888  ]
+ [490.26865  406.29214 ]
+ [681.3134   385.07864 ]
+ [525.13434  279.01123 ]
+ [415.7612   555.14606 ]
+ [425.31345  491.5056  ]
+ [531.8209   395.14606 ]
+ [553.3134   496.89886 ]
+ [370.38806  510.20224 ]
+ [368.71643  471.3708  ]
+ [ 45.850746 509.48315 ]
+ [443.22388  467.77527 ]]
+Scaled bounding box (box_1024): [[ 45.850746 279.01123  681.3134   847.4607  ]]
+Image shape: torch.Size([3, 224, 224])
+Transformed image shape: torch.Size([3, 224, 224])
+Resized image shape: torch.Size([1, 3, 1024, 1024])
+Image with bounding box and points saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/AblationCAM/ISIC_0012092.jpg_bbox.png
+Image embedding shape: torch.Size([1, 256, 64, 64])
+### DEBUG: Inside medsam_inference ###
+Image embedding shape: torch.Size([1, 256, 64, 64])
+Ground truth shape: (1, 2848, 4288)
+Bounding box shape: (1, 4) | Values: [[ 45.850746 279.01123  681.3134   847.4607  ]]
+Transformed box shape after expansion: torch.Size([20, 1, 4])
+Coordinates shape: torch.Size([20, 1, 2])
+Labels shape: torch.Size([20])
+Generating mask 1/10
+IoU for mask 1: 0.20835035036284066
+Generating mask 2/10
+IoU for mask 2: 0.20795894017049732
+Generating mask 3/10
+IoU for mask 3: 0.2114572397195088
+Generating mask 4/10
+IoU for mask 4: 0.20905698974299874
+Generating mask 5/10
+IoU for mask 5: 0.20839780458587379
+Generating mask 6/10
+IoU for mask 6: 0.2091522132087541
+Generating mask 7/10
+IoU for mask 7: 0.2086043028714611
+Generating mask 8/10
+IoU for mask 8: 0.21190623339417322
+Generating mask 9/10
+IoU for mask 9: 0.20995058968486388
+Generating mask 10/10
+IoU for mask 10: 0.20791953334251245
+Best mask selected with IoU: 0.21190623339417322
+Low res pred overlay saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/AblationCAM/ISIC_0012092.jpg_low_res_pred_overlay.png
+Mask shape: (2848, 4288)
+Number of contours found: 172
+Largest contour mask saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/AblationCAM/ISIC_0012092.jpg_largest_contours.png
+Predicted mask shape: (2848, 4288)
+Predicted mask shape: (2848, 4288)
+Ground truth shape: (1, 2848, 4288)
+Final mask with metrics saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/AblationCAM/ISIC_0012092.jpg_result.png
+Original image with bounding box saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/AblationCAM/ISIC_0012092.jpg_original_image_bbox.png
+Overlay with bounding box saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/AblationCAM/ISIC_0012092.jpg_overlay_bbox.png
+Overlay with bounding box and labels saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/AblationCAM/ISIC_0012092.jpg_overlay_unsupervised.png
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+input_tensor shape: torch.Size([1, 3, 224, 224])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Original tensor shape: torch.Size([1, 7, 7, 768])
+Activation map shape: (1, 224, 224)
+Heatmap shape: (224, 224)
+Heatmap size: 4288x2848
+Sampled points (in heatmap space): [[1556 1011]
+ [1955 1608]
+ [1512 2249]
+ [2202 1560]
+ [2102 1572]
+ [2023 1525]
+ [2032 1421]
+ [2107 1524]
+ [2157 1592]
+ [2240 1388]
+ [2287 1653]
+ [2154 1446]
+ [2244 1687]
+ [2327 1707]
+ [2088 1575]
+ [2224 1506]
+ [2050 1871]
+ [2213 1657]
+ [2176 1633]
+ [1972 1963]]
+Normalized input points: [[0.36287314 0.35498595]
+ [0.4559235  0.5646067 ]
+ [0.35261193 0.78967696]
+ [0.51352614 0.5477528 ]
+ [0.49020523 0.5519663 ]
+ [0.47178173 0.5354635 ]
+ [0.4738806  0.49894664]
+ [0.49137127 0.5351124 ]
+ [0.50303173 0.55898875]
+ [0.52238804 0.48735955]
+ [0.53334886 0.5804073 ]
+ [0.5023321  0.5077247 ]
+ [0.5233209  0.5923455 ]
+ [0.5426772  0.599368  ]
+ [0.4869403  0.55301964]
+ [0.51865673 0.52879214]
+ [0.47807837 0.65695226]
+ [0.5160914  0.5818118 ]
+ [0.5074627  0.5733848 ]
+ [0.45988807 0.6892556 ]]
+Scaled input points (mapped to 1024x1024): [[371.5821  363.5056 ]
+ [466.86566 578.1573 ]
+ [361.07462 808.6292 ]
+ [525.85077 560.89886]
+ [501.97015 565.2135 ]
+ [483.1045  548.31464]
+ [485.25372 510.92136]
+ [503.16418 547.9551 ]
+ [515.1045  572.4045 ]
+ [534.92535 499.05618]
+ [546.14923 594.3371 ]
+ [514.38806 519.9101 ]
+ [535.8806  606.56177]
+ [555.7015  613.7528 ]
+ [498.62686 566.2921 ]
+ [531.1045  541.48315]
+ [489.55225 672.7191 ]
+ [528.4776  595.77527]
+ [519.6418  587.14606]
+ [470.92538 705.7977 ]]
+Scaled bounding box (box_1024): [[361.07462 363.5056  555.7015  808.6292 ]]
+Scaled input points: [[371.5821  363.5056 ]
+ [466.86566 578.1573 ]
+ [361.07462 808.6292 ]
+ [525.85077 560.89886]
+ [501.97015 565.2135 ]
+ [483.1045  548.31464]
+ [485.25372 510.92136]
+ [503.16418 547.9551 ]
+ [515.1045  572.4045 ]
+ [534.92535 499.05618]
+ [546.14923 594.3371 ]
+ [514.38806 519.9101 ]
+ [535.8806  606.56177]
+ [555.7015  613.7528 ]
+ [498.62686 566.2921 ]
+ [531.1045  541.48315]
+ [489.55225 672.7191 ]
+ [528.4776  595.77527]
+ [519.6418  587.14606]
+ [470.92538 705.7977 ]]
+Scaled bounding box (box_1024): [[361.07462 363.5056  555.7015  808.6292 ]]
+Image shape: torch.Size([3, 224, 224])
+Transformed image shape: torch.Size([3, 224, 224])
+Resized image shape: torch.Size([1, 3, 1024, 1024])
+Image with bounding box and points saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/RandomCAM/ISIC_0012092.jpg_bbox.png
+Image embedding shape: torch.Size([1, 256, 64, 64])
+### DEBUG: Inside medsam_inference ###
+Image embedding shape: torch.Size([1, 256, 64, 64])
+Ground truth shape: (1, 2848, 4288)
+Bounding box shape: (1, 4) | Values: [[361.07462 363.5056  555.7015  808.6292 ]]
+Transformed box shape after expansion: torch.Size([20, 1, 4])
+Coordinates shape: torch.Size([20, 1, 2])
+Labels shape: torch.Size([20])
+Generating mask 1/10
+IoU for mask 1: 0.42418442063108236
+Generating mask 2/10
+IoU for mask 2: 0.4250009338378699
+Generating mask 3/10
+IoU for mask 3: 0.42404748640478257
+Generating mask 4/10
+IoU for mask 4: 0.42514773138924106
+Generating mask 5/10
+IoU for mask 5: 0.4231534681027247
+Generating mask 6/10
+IoU for mask 6: 0.4245327533745747
+Generating mask 7/10
+IoU for mask 7: 0.4224770442651764
+Generating mask 8/10
+IoU for mask 8: 0.4260024999136301
+Generating mask 9/10
+IoU for mask 9: 0.4254155938559365
+Generating mask 10/10
+IoU for mask 10: 0.4240893693726305
+Best mask selected with IoU: 0.4260024999136301
+Low res pred overlay saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/RandomCAM/ISIC_0012092.jpg_low_res_pred_overlay.png
+Mask shape: (2848, 4288)
+Number of contours found: 329
+Largest contour mask saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/RandomCAM/ISIC_0012092.jpg_largest_contours.png
+Predicted mask shape: (2848, 4288)
+Predicted mask shape: (2848, 4288)
+Ground truth shape: (1, 2848, 4288)
+Final mask with metrics saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/RandomCAM/ISIC_0012092.jpg_result.png
+Original image with bounding box saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/RandomCAM/ISIC_0012092.jpg_original_image_bbox.png
+Overlay with bounding box saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/RandomCAM/ISIC_0012092.jpg_overlay_bbox.png
+Overlay with bounding box and labels saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/swin/RandomCAM/ISIC_0012092.jpg_overlay_unsupervised.png
+Processing model: ViT
+Checkpoint not found for ViT. Using pretrained weights instead.
+Testing ViT...
+Methods to be evaluated: ['GradCAM', 'GradCAM++', 'EigenGradCAM', 'AblationCAM', 'RandomCAM']
+Ground truth shape: (1, 2848, 4288)
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+input_tensor shape: torch.Size([1, 3, 224, 224])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Activation map shape: (1, 224, 224)
+Heatmap shape: (224, 224)
+Heatmap size: 4288x2848
+Sampled points (in heatmap space): [[3402  484]
+ [3113 1955]
+ [2784 2728]
+ [3484  664]
+ [4065 1646]
+ [2297 2366]
+ [3261  560]
+ [3416  454]
+ [2555 2305]
+ [2273 2075]
+ [3213 2724]
+ [2713 1938]
+ [2589 1781]
+ [1102  906]
+ [2581 1936]
+ [3560   21]
+ [1635  858]
+ [3555   88]
+ [3495  678]
+ [2162 2499]]
+Normalized input points: [[0.79337686 0.16994382]
+ [0.7259795  0.6864466 ]
+ [0.6492537  0.9578652 ]
+ [0.8125     0.23314607]
+ [0.9479944  0.57794946]
+ [0.53568095 0.83075845]
+ [0.7604944  0.19662921]
+ [0.79664177 0.15941012]
+ [0.59584886 0.8093399 ]
+ [0.53008395 0.7285815 ]
+ [0.74930036 0.95646065]
+ [0.6326959  0.6804775 ]
+ [0.603778   0.62535113]
+ [0.25699627 0.31811798]
+ [0.6019123  0.6797753 ]
+ [0.83022386 0.0073736 ]
+ [0.38129663 0.30126405]
+ [0.8290578  0.03089888]
+ [0.8150653  0.2380618 ]
+ [0.5041978  0.87745786]]
+Scaled input points (mapped to 1024x1024): [[812.4179   174.02248 ]
+ [743.403    702.9213  ]
+ [664.8358   980.85394 ]
+ [832.       238.74158 ]
+ [970.7463   591.82025 ]
+ [548.5373   850.69666 ]
+ [778.7463   201.34831 ]
+ [815.76117  163.23596 ]
+ [610.14923  828.76404 ]
+ [542.80597  746.06744 ]
+ [767.28357  979.4157  ]
+ [647.8806   696.80896 ]
+ [618.2687   640.35956 ]
+ [263.16418  325.7528  ]
+ [616.3582   696.0899  ]
+ [850.14923    7.550562]
+ [390.44775  308.4944  ]
+ [848.9552    31.64045 ]
+ [834.6269   243.77528 ]
+ [516.2985   898.51685 ]]
+Scaled bounding box (box_1024): [[263.16418    7.550562 970.7463   980.85394 ]]
+Scaled input points: [[812.4179   174.02248 ]
+ [743.403    702.9213  ]
+ [664.8358   980.85394 ]
+ [832.       238.74158 ]
+ [970.7463   591.82025 ]
+ [548.5373   850.69666 ]
+ [778.7463   201.34831 ]
+ [815.76117  163.23596 ]
+ [610.14923  828.76404 ]
+ [542.80597  746.06744 ]
+ [767.28357  979.4157  ]
+ [647.8806   696.80896 ]
+ [618.2687   640.35956 ]
+ [263.16418  325.7528  ]
+ [616.3582   696.0899  ]
+ [850.14923    7.550562]
+ [390.44775  308.4944  ]
+ [848.9552    31.64045 ]
+ [834.6269   243.77528 ]
+ [516.2985   898.51685 ]]
+Scaled bounding box (box_1024): [[263.16418    7.550562 970.7463   980.85394 ]]
+Image shape: torch.Size([3, 224, 224])
+Transformed image shape: torch.Size([3, 224, 224])
+Resized image shape: torch.Size([1, 3, 1024, 1024])
+Image with bounding box and points saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/GradCAM/ISIC_0012092.jpg_bbox.png
+Image embedding shape: torch.Size([1, 256, 64, 64])
+### DEBUG: Inside medsam_inference ###
+Image embedding shape: torch.Size([1, 256, 64, 64])
+Ground truth shape: (1, 2848, 4288)
+Bounding box shape: (1, 4) | Values: [[263.16418    7.550562 970.7463   980.85394 ]]
+Transformed box shape after expansion: torch.Size([20, 1, 4])
+Coordinates shape: torch.Size([20, 1, 2])
+Labels shape: torch.Size([20])
+Generating mask 1/10
+IoU for mask 1: 0.4707206588881263
+Generating mask 2/10
+IoU for mask 2: 0.47114000865913674
+Generating mask 3/10
+IoU for mask 3: 0.46943145428856065
+Generating mask 4/10
+IoU for mask 4: 0.4700333728015171
+Generating mask 5/10
+IoU for mask 5: 0.4716232447360346
+Generating mask 6/10
+IoU for mask 6: 0.4682677925281441
+Generating mask 7/10
+IoU for mask 7: 0.46493101636604933
+Generating mask 8/10
+IoU for mask 8: 0.46966245176443944
+Generating mask 9/10
+IoU for mask 9: 0.47329207302337584
+Generating mask 10/10
+IoU for mask 10: 0.4678107159450824
+Best mask selected with IoU: 0.47329207302337584
+Low res pred overlay saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/GradCAM/ISIC_0012092.jpg_low_res_pred_overlay.png
+Mask shape: (2848, 4288)
+Number of contours found: 55
+Largest contour mask saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/GradCAM/ISIC_0012092.jpg_largest_contours.png
+Predicted mask shape: (2848, 4288)
+Predicted mask shape: (2848, 4288)
+Ground truth shape: (1, 2848, 4288)
+Final mask with metrics saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/GradCAM/ISIC_0012092.jpg_result.png
+Original image with bounding box saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/GradCAM/ISIC_0012092.jpg_original_image_bbox.png
+Overlay with bounding box saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/GradCAM/ISIC_0012092.jpg_overlay_bbox.png
+Overlay with bounding box and labels saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/GradCAM/ISIC_0012092.jpg_overlay_unsupervised.png
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+input_tensor shape: torch.Size([1, 3, 224, 224])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Activation map shape: (1, 224, 224)
+Heatmap shape: (224, 224)
+Heatmap size: 4288x2848
+Sampled points (in heatmap space): [[3821   15]
+ [2282 2312]
+ [ 579 2841]
+ [3531  644]
+ [3727   34]
+ [3505  542]
+ [2092 2379]
+ [3502  639]
+ [3802   80]
+ [3512   32]
+ [3365  489]
+ [3798  103]
+ [2185 2499]
+ [2114 2506]
+ [1402 2507]
+ [ 751 2102]
+ [3682  130]
+ [3464  537]
+ [3513  649]
+ [ 929 2146]]
+Normalized input points: [[0.8910914  0.00526685]
+ [0.5321828  0.81179774]
+ [0.13502799 0.99754214]
+ [0.8234608  0.2261236 ]
+ [0.8691698  0.0119382 ]
+ [0.8173974  0.19030899]
+ [0.48787314 0.83532304]
+ [0.8166978  0.22436798]
+ [0.88666046 0.02808989]
+ [0.81902987 0.01123596]
+ [0.78474814 0.17169943]
+ [0.8857276  0.03616573]
+ [0.50956154 0.87745786]
+ [0.49300373 0.8799157 ]
+ [0.32695895 0.88026685]
+ [0.17513992 0.7380618 ]
+ [0.85867536 0.04564607]
+ [0.8078358  0.18855338]
+ [0.81926304 0.22787921]
+ [0.21665113 0.75351125]]
+Scaled input points (mapped to 1024x1024): [[ 912.4776       5.3932586]
+ [ 544.9552     831.2809   ]
+ [ 138.26866   1021.48315  ]
+ [ 843.2239     231.55057  ]
+ [ 890.02985     12.224719 ]
+ [ 837.01495    194.8764   ]
+ [ 499.5821     855.3708   ]
+ [ 836.2985     229.7528   ]
+ [ 907.9403      28.764046 ]
+ [ 838.6866      11.505618 ]
+ [ 803.5821     175.82022  ]
+ [ 906.98505     37.033707 ]
+ [ 521.791      898.51685  ]
+ [ 504.83582    901.0337   ]
+ [ 334.80597    901.39325  ]
+ [ 179.34328    755.77527  ]
+ [ 879.28357     46.741573 ]
+ [ 827.2239     193.07866  ]
+ [ 838.92535    233.34831  ]
+ [ 221.85075    771.5955   ]]
+Scaled bounding box (box_1024): [[ 138.26866      5.3932586  912.4776    1021.48315  ]]
+Scaled input points: [[ 912.4776       5.3932586]
+ [ 544.9552     831.2809   ]
+ [ 138.26866   1021.48315  ]
+ [ 843.2239     231.55057  ]
+ [ 890.02985     12.224719 ]
+ [ 837.01495    194.8764   ]
+ [ 499.5821     855.3708   ]
+ [ 836.2985     229.7528   ]
+ [ 907.9403      28.764046 ]
+ [ 838.6866      11.505618 ]
+ [ 803.5821     175.82022  ]
+ [ 906.98505     37.033707 ]
+ [ 521.791      898.51685  ]
+ [ 504.83582    901.0337   ]
+ [ 334.80597    901.39325  ]
+ [ 179.34328    755.77527  ]
+ [ 879.28357     46.741573 ]
+ [ 827.2239     193.07866  ]
+ [ 838.92535    233.34831  ]
+ [ 221.85075    771.5955   ]]
+Scaled bounding box (box_1024): [[ 138.26866      5.3932586  912.4776    1021.48315  ]]
+Image shape: torch.Size([3, 224, 224])
+Transformed image shape: torch.Size([3, 224, 224])
+Resized image shape: torch.Size([1, 3, 1024, 1024])
+Image with bounding box and points saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/GradCAM++/ISIC_0012092.jpg_bbox.png
+Image embedding shape: torch.Size([1, 256, 64, 64])
+### DEBUG: Inside medsam_inference ###
+Image embedding shape: torch.Size([1, 256, 64, 64])
+Ground truth shape: (1, 2848, 4288)
+Bounding box shape: (1, 4) | Values: [[ 138.26866      5.3932586  912.4776    1021.48315  ]]
+Transformed box shape after expansion: torch.Size([20, 1, 4])
+Coordinates shape: torch.Size([20, 1, 2])
+Labels shape: torch.Size([20])
+Generating mask 1/10
+IoU for mask 1: 0.031130033229285346
+Generating mask 2/10
+IoU for mask 2: 0.031894502201422696
+Generating mask 3/10
+IoU for mask 3: 0.03166617087759582
+Generating mask 4/10
+IoU for mask 4: 0.030186272175210246
+Generating mask 5/10
+IoU for mask 5: 0.03184842063159982
+Generating mask 6/10
+IoU for mask 6: 0.03039411679247329
+Generating mask 7/10
+IoU for mask 7: 0.03095440778270086
+Generating mask 8/10
+IoU for mask 8: 0.03118239847843591
+Generating mask 9/10
+IoU for mask 9: 0.034829755718238355
+Generating mask 10/10
+IoU for mask 10: 0.033038035343854216
+Best mask selected with IoU: 0.034829755718238355
+Low res pred overlay saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/GradCAM++/ISIC_0012092.jpg_low_res_pred_overlay.png
+Mask shape: (2848, 4288)
+Number of contours found: 393
+Largest contour mask saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/GradCAM++/ISIC_0012092.jpg_largest_contours.png
+Predicted mask shape: (2848, 4288)
+Predicted mask shape: (2848, 4288)
+Ground truth shape: (1, 2848, 4288)
+Final mask with metrics saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/GradCAM++/ISIC_0012092.jpg_result.png
+Original image with bounding box saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/GradCAM++/ISIC_0012092.jpg_original_image_bbox.png
+Overlay with bounding box saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/GradCAM++/ISIC_0012092.jpg_overlay_bbox.png
+Overlay with bounding box and labels saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/GradCAM++/ISIC_0012092.jpg_overlay_unsupervised.png
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+input_tensor shape: torch.Size([1, 3, 224, 224])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Activation map shape: (1, 224, 224)
+Heatmap shape: (224, 224)
+Heatmap size: 4288x2848
+Sampled points (in heatmap space): [[1558 2499]
+ [ 730 2781]
+ [1367 2563]
+ [ 437   45]
+ [2601 2291]
+ [4208 1786]
+ [4202 1614]
+ [4100 1735]
+ [1334 2537]
+ [3521  924]
+ [4163  802]
+ [4225 1765]
+ [2454 2344]
+ [4103 1692]
+ [4139 1711]
+ [2995  933]
+ [4284 1744]
+ [4164 1710]
+ [4150 1665]
+ [3218  470]]
+Normalized input points: [[0.36333954 0.87745786]
+ [0.17024253 0.9764747 ]
+ [0.31879663 0.89992976]
+ [0.10191231 0.01580056]
+ [0.6065765  0.80442417]
+ [0.98134327 0.6271067 ]
+ [0.97994405 0.5667135 ]
+ [0.95615673 0.60919946]
+ [0.31110075 0.89080054]
+ [0.8211287  0.3244382 ]
+ [0.97084886 0.28160113]
+ [0.9853078  0.61973315]
+ [0.5722948  0.8230337 ]
+ [0.95685637 0.59410113]
+ [0.96525186 0.6007725 ]
+ [0.6984608  0.3275983 ]
+ [0.9990672  0.6123595 ]
+ [0.9710821  0.60042137]
+ [0.9678172  0.5846208 ]
+ [0.7504664  0.1650281 ]]
+Scaled input points (mapped to 1024x1024): [[ 372.0597    898.51685 ]
+ [ 174.32835   999.9101  ]
+ [ 326.44775   921.5281  ]
+ [ 104.35821    16.179775]
+ [ 621.13434   823.73035 ]
+ [1004.8955    642.1573  ]
+ [1003.4627    580.31464 ]
+ [ 979.1045    623.82025 ]
+ [ 318.56717   912.17975 ]
+ [ 840.8358    332.22473 ]
+ [ 994.14923   288.35956 ]
+ [1008.9552    634.60675 ]
+ [ 586.02985   842.7865  ]
+ [ 979.8209    608.35956 ]
+ [ 988.4179    615.19104 ]
+ [ 715.2239    335.46066 ]
+ [1023.0448    627.05615 ]
+ [ 994.38806   614.8315  ]
+ [ 991.0448    598.6517  ]
+ [ 768.4776    168.98877 ]]
+Scaled bounding box (box_1024): [[ 104.35821    16.179775 1023.0448    999.9101  ]]
+Scaled input points: [[ 372.0597    898.51685 ]
+ [ 174.32835   999.9101  ]
+ [ 326.44775   921.5281  ]
+ [ 104.35821    16.179775]
+ [ 621.13434   823.73035 ]
+ [1004.8955    642.1573  ]
+ [1003.4627    580.31464 ]
+ [ 979.1045    623.82025 ]
+ [ 318.56717   912.17975 ]
+ [ 840.8358    332.22473 ]
+ [ 994.14923   288.35956 ]
+ [1008.9552    634.60675 ]
+ [ 586.02985   842.7865  ]
+ [ 979.8209    608.35956 ]
+ [ 988.4179    615.19104 ]
+ [ 715.2239    335.46066 ]
+ [1023.0448    627.05615 ]
+ [ 994.38806   614.8315  ]
+ [ 991.0448    598.6517  ]
+ [ 768.4776    168.98877 ]]
+Scaled bounding box (box_1024): [[ 104.35821    16.179775 1023.0448    999.9101  ]]
+Image shape: torch.Size([3, 224, 224])
+Transformed image shape: torch.Size([3, 224, 224])
+Resized image shape: torch.Size([1, 3, 1024, 1024])
+Image with bounding box and points saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/EigenGradCAM/ISIC_0012092.jpg_bbox.png
+Image embedding shape: torch.Size([1, 256, 64, 64])
+### DEBUG: Inside medsam_inference ###
+Image embedding shape: torch.Size([1, 256, 64, 64])
+Ground truth shape: (1, 2848, 4288)
+Bounding box shape: (1, 4) | Values: [[ 104.35821    16.179775 1023.0448    999.9101  ]]
+Transformed box shape after expansion: torch.Size([20, 1, 4])
+Coordinates shape: torch.Size([20, 1, 2])
+Labels shape: torch.Size([20])
+Generating mask 1/10
+IoU for mask 1: 0.02065233606065618
+Generating mask 2/10
+IoU for mask 2: 0.020596070407097784
+Generating mask 3/10
+IoU for mask 3: 0.020502153609702773
+Generating mask 4/10
+IoU for mask 4: 0.020618815794273947
+Generating mask 5/10
+IoU for mask 5: 0.02101613537657998
+Generating mask 6/10
+IoU for mask 6: 0.020472373927228883
+Generating mask 7/10
+IoU for mask 7: 0.020378910101554133
+Generating mask 8/10
+IoU for mask 8: 0.02123812397788334
+Generating mask 9/10
+IoU for mask 9: 0.020399172928735214
+Generating mask 10/10
+IoU for mask 10: 0.020923399807155362
+Best mask selected with IoU: 0.02123812397788334
+Low res pred overlay saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/EigenGradCAM/ISIC_0012092.jpg_low_res_pred_overlay.png
+Mask shape: (2848, 4288)
+Number of contours found: 270
+Largest contour mask saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/EigenGradCAM/ISIC_0012092.jpg_largest_contours.png
+Predicted mask shape: (2848, 4288)
+Predicted mask shape: (2848, 4288)
+Ground truth shape: (1, 2848, 4288)
+Final mask with metrics saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/EigenGradCAM/ISIC_0012092.jpg_result.png
+Original image with bounding box saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/EigenGradCAM/ISIC_0012092.jpg_original_image_bbox.png
+Overlay with bounding box saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/EigenGradCAM/ISIC_0012092.jpg_overlay_bbox.png
+Overlay with bounding box and labels saved to /home/csc29/projects/Zero-Shot_SkinLesion_Segmentation/results/CAM-MedSAM/test/vis/ViT/EigenGradCAM/ISIC_0012092.jpg_overlay_unsupervised.png
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+input_tensor shape: torch.Size([1, 3, 224, 224])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])
+Original tensor shape: torch.Size([1, 196, 768])
+Reshaped tensor shape: torch.Size([1, 768, 14, 14])

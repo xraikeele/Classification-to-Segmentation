@@ -1,0 +1,6 @@
+image_id,image_path,mask_path,label,label_binary,lesion_ratio,compactness,description
+ISIC_0012223,notebooks/demo_data/images/ISIC_0012223.jpg,notebooks/demo_data/masks/ISIC_0012223_segmentation.png,Benign,0,0.575,0.650,"Benign, large lesion, compact/circular"
+ISIC_0014941,notebooks/demo_data/images/ISIC_0014941.jpg,notebooks/demo_data/masks/ISIC_0014941_segmentation.png,Benign,0,0.302,0.014,"Benign, large lesion, irregular shape"
+ISIC_0015273,notebooks/demo_data/images/ISIC_0015273.jpg,notebooks/demo_data/masks/ISIC_0015273_segmentation.png,Benign,0,0.045,0.063,"Benign, small lesion, irregular shape"
+ISIC_0016066,notebooks/demo_data/images/ISIC_0016066.jpg,notebooks/demo_data/masks/ISIC_0016066_segmentation.png,Benign,0,0.091,0.605,"Benign, small lesion, compact/circular"
+ISIC_0016070,notebooks/demo_data/images/ISIC_0016070.jpg,notebooks/demo_data/masks/ISIC_0016070_segmentation.png,Benign,0,0.025,0.582,"Benign, small lesion, moderate shape"

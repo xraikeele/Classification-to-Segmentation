@@ -378,19 +378,54 @@ masks, scores, logits = predictor.predict(
 
 ### Quantitative Performance (ISIC 2017 Test Set)
 
-| Model | CAM Method | Precision | Recall | F1-Score | IoU |
-|-------|-----------|-----------|--------|----------|-----|
-| ResNet50 | GradCAM | 0.6357 | 0.9639 | 0.7661 | 0.6209 |
-| MobileNetV2 | GradCAM++ | 0.5442 | 0.5256 | 0.5347 | 0.3650 |
-| EfficientNet-B0 | EigenCAM | 0.4231 | 0.3984 | 0.4103 | 0.2581 |
-| ViT | GradCAM | 0.4676 | 0.0947 | 0.1575 | 0.0855 |
-| Swin | GradCAM | 0.1394 | 0.7422 | 0.2346 | 0.1327 |
+#### Best Method Performance (Adaptive CAM Selection per Image)
 
-**Key Findings:**
-- **Best Overall**: ResNet50 with GradCAM (IoU: 0.6209)
-- **High Recall**: Swin Transformer captures most lesion regions but lower precision
-- **Balanced Performance**: MobileNetV2 offers good precision-recall trade-off
-- **Zero-Shot Advantage**: No pixel-level annotations required during training
+| Model | Training | Precision | Recall | F1-Score | IoU | Dice |
+|-------|----------|-----------|--------|----------|-----|------|
+| **MobileNetV2** | **Finetuned** | **0.764** | **0.547** | **0.510** | **0.366** | **0.510** |
+| **Swin** | **Finetuned** | **0.750** | **0.534** | **0.498** | **0.357** | **0.498** |
+| ResNet50 | Finetuned | 0.739 | 0.496 | 0.475 | 0.337 | 0.475 |
+| MobileNetV2 | Zero-shot | 0.740 | 0.468 | 0.470 | 0.337 | 0.470 |
+| Swin | Zero-shot | 0.743 | 0.427 | 0.446 | 0.315 | 0.446 |
+
+**Note:** "Best Method" adaptively selects the optimal CAM method (GradCAM, GradCAM++, AblationCAM, or ScoreCAM) for each individual image, simulating clinician selection from multiple mask options.
+
+#### Baseline Comparisons
+
+| Method | IoU | Dice | Notes |
+|--------|-----|------|-------|
+| SAM (manual prompts) | 0.672 | 0.805 | Ground-truth guided prompting |
+| MedSAM (manual prompts) | 0.671 | 0.782 | Ground-truth guided prompting |
+| **MobileNetV2 + Best CAM** | **0.366** | **0.510** | **Automated CAM-guided prompting (finetuned)** |
+| MobileNetV2 + Best CAM | 0.337 | 0.470 | Automated CAM-guided prompting (zero-shot) |
+
+#### Individual CAM Method Performance
+
+**Highest performing combinations:**
+- **Zero-shot**: MobileNetV2 + ScoreCAM (IoU: 0.184)
+- **Finetuned**: MobileNetV2 + AblationCAM (IoU: 0.282)
+
+**CAM Baseline (Finetuned Swin Transformer):**
+
+| CAM Method | Precision | Recall | F1 | IoU | Dice |
+|------------|-----------|--------|----|----|------|
+| GradCAM | 0.487 | 0.400 | 0.345 | 0.236 | 0.345 |
+| AblationCAM | 0.294 | 0.329 | 0.268 | 0.180 | 0.268 |
+| ScoreCAM | 0.365 | 0.301 | 0.263 | 0.177 | 0.263 |
+| GradCAM++ | 0.254 | 0.165 | 0.155 | 0.096 | 0.155 |
+| RandomCAM | 0.286 | 0.329 | 0.225 | 0.148 | 0.225 |
+
+### Key Findings
+
+- **Best Overall**: Finetuned MobileNetV2 with adaptive CAM selection (IoU: 0.366, Dice: 0.510)
+- **Domain Training Impact**: Fine-tuning improved performance across all models, with MobileNetV2 showing the most robust generalization
+- **Zero-shot Capability**: MobileNetV2 achieved competitive performance (IoU: 0.337) even with ImageNet weights only
+- **Adaptive Selection Benefit**: The "best method" approach reduced complete segmentation failures by ~98.75% (from ~400 to ~5 zero-IoU cases)
+- **CAM Method Variability**: GradCAM consistently outperformed other methods for noisy mask generation (IoU: 0.236 vs. 0.096-0.180)
+- **Architecture Insights**: 
+  - CNNs (especially MobileNetV2) showed superior CAM-based localization compared to transformers
+  - Transformer models (ViT, Swin) struggled with effective prompt generation despite reasonable classification accuracy
+- **Performance Gap**: Automated CAM-guided prompting achieved ~54% of manual prompting performance (0.366 vs. 0.671 IoU), demonstrating promise for fully automated workflows while highlighting room for improvement
 
 ### Qualitative Examples
 

@@ -1,6 +1,6 @@
 # Class Activation Mapping for Zero-Shot Skin Lesion Segmentation
 
-[![Paper](https://img.shields.io/badge/Paper-AIIH%202024-blue)](./AIIH-paper.pdf)
+[![Paper](https://img.shields.io/badge/Paper-AIIH%202025-blue)](./AIIH-paper.pdf)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.5.1-red.svg)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
